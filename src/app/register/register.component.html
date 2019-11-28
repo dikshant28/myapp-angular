@@ -1,0 +1,29 @@
+<form #myForm="ngForm" (ngSubmit)="OnAddCallMe(myForm)" >
+    <legend>Add Employee</legend>
+
+    <div class="form-group">
+        <label for="empid">empid</label>
+        <input ngModel type="text" class="form-control" id="empid" name="empid" placeholder="Input empid">
+    </div>
+
+
+    <div class="form-group">
+        <label for="empname">empname</label>
+        <input ngModel type="text" class="form-control" id="empname" name="empname" placeholder="Input empname">
+    </div>
+
+
+    <div class="form-group">
+        <label for="empsal">empsal</label>
+        <input ngModel type="text" class="form-control" id="empsal" name="empsal" placeholder="Input empsal">
+    </div>
+
+    
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+
+    <span class="label label-warning">{{message}}</span>
+
+    <button type="button" class="btn btn-primary" (click)="GoBackHome()">Go Back Home</button>
+
+</form>
